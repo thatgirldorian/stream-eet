@@ -11,6 +11,7 @@ The navigation is done using React Router, while the forms and the error handlin
 
 <h3>Issues faced & resolution:</h3>
 
+- I ran into this error: *You should not use `<Link>` outside a `<Router>`* when trying to add my header as an always-visible component, but I was able to solve this by wrapping my content div with the `<BrowserRouter></BrowserRouter>` tag. 
 
 <h3>Technology used:</h3>
 
