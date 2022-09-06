@@ -1,3 +1,18 @@
+# stream-eet
+
+
+
+<h3>Issues faced & resolution:</h3>
+
+
+<h3>Technology used:</h3>
+
+
+
+<h3>Link to site:</h3>
+
+<h3>Screenshare:</h3>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
