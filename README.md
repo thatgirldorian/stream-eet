@@ -18,7 +18,7 @@ The navigation is done using React Router, while the forms and the error handlin
 - React JS
 - Redux
 - React Router
-- Google Oauth
+- Google Oauth + Google API library
 
 
 
