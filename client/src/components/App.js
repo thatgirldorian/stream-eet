@@ -32,5 +32,4 @@ export default App;
 
 
 
-// 308748859570-e7chk2m9lqr57ptjs7jgos70faee74ii.apps.googleusercontent.com
 
