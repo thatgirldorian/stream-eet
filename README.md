@@ -1,6 +1,6 @@
 # stream-eet
 
-This is a streaming application built with React that allows you to create an account with Google Oauth. You can view all the streams on the application via a general feed, create a new stream, edit it, and delete it. This app is broken into three parts: 
+This is a streaming application built with React that allows you to create an account with Google Oauth. You can view all the streams on the application via a general feed. You can also create a new stream, edit it, and delete it. This app is broken into three parts: 
 
 - The UI that the user can see in their browser, which is made with React and Redux
 - A small web server that lists all the videos you can watch
