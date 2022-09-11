@@ -1,10 +1,14 @@
 button {
-  color: yellow !important;
   padding: 10px 5px !important;
   margin: 5px 10px 5px 0px !important;
 }
 
+
 .google {
-  color: #4285F4;
-  padding-left: 5px;
+  padding-left: 10px;
+} 
+
+.loader {
+  margin-right: 5px !important;
 }
+
