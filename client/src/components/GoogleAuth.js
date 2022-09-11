@@ -28,11 +28,11 @@ class GoogleAuth extends React.Component {
     }
 
     //create helper functions for log in and log out
-    onSignIn = () => {
+    onSignInClick = () => {
         this.auth.signIn()
     }
 
-    onSignOut = () => {
+    onSignOutClick = () => {
         this.auth.signOut()
     }
 
@@ -43,13 +43,13 @@ class GoogleAuth extends React.Component {
             return <div className="ui active mini inline loader"></div>
         } else if (this.state.isSignedIn) {
             return (
-                <button onClick={this.onSignOut} className="ui red google button">Sign out
+                <button onClick={this.onSignOutClick} className="ui red google button">Sign out
                     <i className="google icon"></i>
                 </button>
             )
         } else {
             return (
-                <button onClick={this.onSignIn} className="ui blue google button">Login with 
+                <button onClick={this.onSignInClick} className="ui blue google button">Login with 
                     <i className="google icon"></i>
                 </button>
             ) 
