@@ -6,7 +6,7 @@ This is a streaming application built with React that allows you to create an ac
 - A small web server that lists all the videos you can watch
 - A RTMP (Real-time messaging protocol) server that handles the video feed
 
-The navigation is done using React Router, while the forms and the error handling are handled via Redux. 
+The navigation is done using React Router, while the forms via Redux forms. The error handling are handled neatly as well.
 
 
 <h3>Issues faced & resolution:</h3>
