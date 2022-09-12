@@ -1,8 +1,12 @@
+.menu {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
 button {
   padding: 10px 5px !important;
   margin: 5px 10px 5px 0px !important;
 }
-
 
 .google {
   padding-left: 10px;
