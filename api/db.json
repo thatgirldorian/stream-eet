@@ -1,5 +1,9 @@
+{
+  "streams": [
     {
-        "streams": [
-        { "id": 1, "title": "json-server", "author": "typicode" }
-        ]
+      "title": "A new stream",
+      "description": "sdvdsvsdv",
+      "id": 1
     }
+  ]
+}
