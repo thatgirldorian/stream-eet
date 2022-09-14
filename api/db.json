@@ -1,9 +1,14 @@
 {
-  "streams": [
-    {
-      "title": "A new stream",
-      "description": "sdvdsvsdv",
-      "id": 1
-    }
-  ]
+    "streams": [
+        {
+        "title": "A new stream",
+        "description": "sdvdsvsdv",
+        "id": 1
+        },
+        {
+        "title": "Me eating noodles",
+        "description": "A stream where I enjoy noodles for your enjoyment",
+        "id": 2
+        }
+    ]
 }
