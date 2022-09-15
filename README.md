@@ -19,6 +19,7 @@ The navigation is done using React Router, while the forms (validation + error h
 - React Router
 - Google Oauth + Google API library
 - The JSON Server package
+- RESTful APIs
 
 
 
