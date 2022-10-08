@@ -52,30 +52,30 @@ export const deleteStream = () => {
 export const createStream = formValues => async dispatch => {
     const response = await streams.post('/streams', formValues)
 
-    dispatch({ createNewStream, payload: response.data })
+    dispatch({ type: createNewStream, payload: response.data })
 }
 
 export const fetchAllStreams = () => async dispatch => {
     const response = await streams.get('/streams')
 
-    dispatch({ fetchAllStreams, payload: response.data })
+    dispatch({ type: fetchAllStreams, payload: response.data })
 }
 
 export const fetchOneStream = (id) => async dispatch =>{
     const response = await streams.get(`/streams/${id}`)
 
-    dispatch({ fetchOneStream, payload: response.data })
+    dispatch({ type: fetchOneStream, payload: response.data })
 
 }
 
 export  const editStream = (id, formValues) => async dispatch => {
     const response = await streams.put(`/streams/${id}`, formValues)
 
-    dispatch({ editStream, payload: response.data })
+    dispatch({ type: editStream, payload: response.data })
 }
 
 export  const removeStream = (id) => async dispatch => {
     await streams.delete(`/streams/${id}`)
 
-    dispatch({ removeStream, payload: id})
+    dispatch({ type: removeStream, payload: id})
 }
