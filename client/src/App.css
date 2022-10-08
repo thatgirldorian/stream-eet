@@ -3,6 +3,14 @@
   margin-right: 5px !important;
 }
 
+.stream-list {
+  margin-left: 10px !important;
+}
+
+.stream-header {
+  margin-left: 20px !important;
+}
+
 button {
   padding: 10px 5px !important;
   margin: 5px 10px 5px 0px !important;

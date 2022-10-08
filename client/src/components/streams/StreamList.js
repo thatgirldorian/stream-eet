@@ -7,13 +7,14 @@ class StreamList extends React.Component {
         this.props.fetchAllStreams()
     }
 
+    //Show all our streams on the screen
     renderList() {
             return this.props.streams.map(stream => {
             return (
-                <div className="item" key={stream.id}>
-                <i className="large middle aligned icon camera" />
+                <div className="item stream-list" key={stream.id}>
+                <i className="large middle aligned play circle outline icon" />
                 <div className="content">
-                    {stream.title}
+                    <h4 className="header">{stream.title}</h4>
                     <div className="description">{stream.description}</div>
                 </div>
                 </div>
@@ -24,11 +25,10 @@ class StreamList extends React.Component {
 
     render() {
         return(
-            console.log(this.props.streams)
-            // <div>
-            //     <h2>All Streams</h2>
-            //     <div className="ui celled list">{this.renderList()}</div>
-            // </div>
+            <div>
+                <h2 className="stream-header">All Streams</h2>
+                <div className="ui celled list">{this.renderList()}</div>
+            </div>
         )
     }
 }
