@@ -7,7 +7,7 @@
     },
     {
       "title": "Me eating noodles",
-      "description": "A stream where I enjoy noodles for your enjoyment",
+      "description": "A stream where I eat a variety of noodles for your enjoyment",
       "id": 2
     },
     {
@@ -21,6 +21,12 @@
       "description": "Come watch some scary stuff with me! ",
       "userId": "100276797503695183334",
       "id": 4
+    },
+    {
+      "title": "Coding stream",
+      "description": "I'll be making a small JavaScript application, come watch! :)",
+      "userId": "100276797503695183334",
+      "id": 5
     }
   ]
 }
