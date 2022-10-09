@@ -1,4 +1,5 @@
 import streams from '../apis/streams'
+import history from '../history'
 
 export const signIn = (userId) => {
     return {
@@ -56,6 +57,7 @@ export const createStream = formValues => async (dispatch, getState) => {
     dispatch({ type: 'CREATE_STREAM', payload: response.data })
 
     //trigger navigation to the all streams page
+    history.push('/')
 }
 
 export const fetchAllStreams = () => async dispatch => {
