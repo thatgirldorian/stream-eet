@@ -7,12 +7,16 @@
   margin-left: 10px !important;
 }
 
-.stream-header, .new-stream {
+.stream-header {
   margin-left: 20px !important;
 }
 
+.new-stream {
+  margin-right: 14px !important;
+}
+
 button {
-  padding: 10px 5px !important;
+  padding: 10px 14px !important;
   margin: 5px 10px 5px 0px !important;
 }
 

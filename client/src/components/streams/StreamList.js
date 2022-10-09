@@ -8,11 +8,24 @@ class StreamList extends React.Component {
         this.props.fetchAllStreams()
     }
 
+    //Use a helper to conditionally show buttons depending on whether a user is logged in
+    renderAdminButtons(stream) {
+        if (stream.userId === this.props.currentUserId) {
+            return(
+                <div className="right floated content">
+                    <button className="ui button primary">Edit</button>
+                    <button className="ui button negative">Delete</button>
+                </div>
+            )
+        }
+    }
+
     //Show all our streams on the screen
     renderList() {
             return this.props.streams.map(stream => {
             return (
                 <div className="item stream-list" key={stream.id}>
+                    {this.renderAdminButtons(stream)}
                 <i className="large middle aligned play circle outline icon" />
                 <div className="content">
                     <h4 className="header">{stream.title}</h4>
@@ -23,22 +36,36 @@ class StreamList extends React.Component {
             });
         }
     
+        //Show a creation link if a user is logged in
+        renderCreateLink() {
+            if (this.props.isSignedIn) {
+                return (
+                <div style={{ textAlign: 'right' }}>
+                    <Link className="ui button primary new-stream" to='/streams/new'>
+                        Create a stream
+                    </Link>
+                </div>
+                )
+            }
+        }
 
     render() {
         return(
             <div>
                 <h2 className="stream-header">All Streams</h2>
                 <div className="ui celled list">{this.renderList()}</div>
-                <Link to='/streams/new'>
-                    <button className="ui button primary new-stream" type="submit">Add new stream</button>
-                </Link>
+                {this.renderCreateLink()}
             </div>
         )
     }
 }
 
 const mapStateToProps = state => {
-    return { streams: Object.values(state.streams) };
+    return { 
+        streams: Object.values(state.streams),
+        currentUserId: state.auth.userId,
+        isSignedIn: state.auth.isSignedIn 
+    };
 };
 
 export default connect(
