@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAllStreams } from '../../actions';
+import { Link } from 'react-router-dom'
 
 class StreamList extends React.Component {
     componentDidMount() {
@@ -28,6 +29,9 @@ class StreamList extends React.Component {
             <div>
                 <h2 className="stream-header">All Streams</h2>
                 <div className="ui celled list">{this.renderList()}</div>
+                <Link to='/streams/new'>
+                    <button className="ui button primary new-stream" type="submit">Add new stream</button>
+                </Link>
             </div>
         )
     }
