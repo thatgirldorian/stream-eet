@@ -1,31 +1,10 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form'
 import './Stream.css'
 import { connect } from 'react-redux'
 import { createStream } from '../../actions'
+import StreamForm from './StreamForm';
 
 class StreamCreate extends React.Component {
-    renderError({ error, touched}) {
-        if (touched && error) {
-            return (
-                <div className="ui error message">
-                    <div className="header">{error}</div>
-                </div>
-            )
-        }
-
-    }
-
-    renderInput = ({ input, label, meta })  => {
-
-        return (
-            <div className="field">
-                <label className="">{label}</label>
-                <input {...input} />
-                {this.renderError(meta)}
-            </div>
-        )
-    }
 
     //create a helper function for submission
     onSubmit = (formValues) => {
@@ -35,37 +14,13 @@ class StreamCreate extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
-                <Field name="title" component={this.renderInput} label="Add a title" />
-                <Field name="description" component={this.renderInput} label="Add a description" />
-                <button className="ui button primary" type="submit">Create</button>
-            </form>
+            <div>
+                <h2 className="stream-header">Create a new stream</h2>
+                <StreamForm onSubmit={this.onSubmit} />
+            </div>
         )
     }
 }
 
-//create a validation function
-const validate = (formValues) => {
-    //define an errors object 
-    const errors = {}
 
-    if (!formValues.title) {
-        errors.title = 'Please enter a title';
-        
-    } 
-
-    if (!formValues.description) {
-        errors.description = 'Please enter a description'
-    }
-
-    return errors
-}
-
-
-const wrappedForm = reduxForm({
-    form: 'stream_create',
-    validate
-})(StreamCreate)
-
-
-export default connect(null, {createStream})(wrappedForm)
+export default connect(null, {createStream})(StreamCreate)
