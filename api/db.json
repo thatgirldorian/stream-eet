@@ -1,31 +1,34 @@
 {
   "streams": [
     {
-      "title": "A new stream",
-      "description": "sdvdsvsdv",
-      "id": 1
-    },
-    {
-      "title": "Me eating noodles",
-      "description": "A stream where I eat a variety of noodles for your enjoyment",
-      "id": 2
-    },
-    {
-      "title": "Reading for 24 hours pt 3",
-      "description": "I shut my phone off yesterday and read for 24 hours straight! I got through 5 books, can you believe it? me neither! :)",
-      "id": 3
-    },
-    {
       "title": "Watching the best horror movies of 2021 (pt 2)",
       "description": "Come watch some scary movies with me! heyyyyy",
       "userId": "100276797503695183334",
       "id": 4
     },
     {
-      "title": "Yet another reading sprint",
-      "description": "Reading a couple of thriller books today for 12 hours straight to crush my TBR list",
+      "title": "Me eating hot spicy noodles for your enjoyment",
+      "description": "I'm finishing a carton of spicy garlic noodles today to the #spicy challenge",
+      "userId": "100276797503695183334",
+      "id": 5
+    },
+    {
+      "title": "Sims 4 Let's Play",
+      "description": "Heyyooo guyssss. I'm starting a new Rags to Riches Challenge using the latest High School Years pack. Come watch! xoxo 😘 ",
       "userId": "100276797503695183334",
       "id": 6
+    },
+    {
+      "title": "24 hour reading sprint 📚",
+      "description": "I shut my phone off yesterday and read for 24 hours straight! I got through 5 books, can you believe it? me neither! :)",
+      "userId": "100276797503695183334",
+      "id": 7
+    },
+    {
+      "title": "Ramdom Vlog & Chat with Subs",
+      "description": "Let's chat 💬 ",
+      "userId": "100276797503695183334",
+      "id": 8
     }
   ]
 }

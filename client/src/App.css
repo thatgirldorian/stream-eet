@@ -20,6 +20,14 @@ button {
   margin: 5px 10px 5px 0px !important;
 }
 
+.action-btn {
+  margin-bottom: 15px !important;
+}
+
+span {
+  font-weight: bold;
+}
+
 .google {
   padding-left: 10px;
 } 
