@@ -7,7 +7,7 @@
   margin-left: 10px !important;
 }
 
-.stream-header {
+.stream-header, .show-stream {
   margin-left: 20px !important;
 }
 
@@ -34,5 +34,10 @@ span {
 
 .loader {
   margin-right: 5px !important;
+}
+
+.header:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 

@@ -28,7 +28,11 @@ class StreamList extends React.Component {
                     {this.renderAdminButtons(stream)}
                 <i className="large middle aligned play circle outline icon" />
                 <div className="content">
-                    <h4 className="header">{stream.title}</h4>
+                    <h4 className="header">
+                        <Link className="header" to={`/streams/${stream.id}`}>
+                            {stream.title}
+                        </Link>
+                    </h4>
                     <div className="description">{stream.description}</div>
                 </div>
                 </div>
@@ -54,7 +58,7 @@ class StreamList extends React.Component {
             <div>
                 <h2 className="stream-header">All Streams</h2>
                 <div className="ui celled list">{this.renderList()}</div>
-                {this.renderCreateLink()}
+                {this.renderCreateLink()}  
             </div>
         )
     }
