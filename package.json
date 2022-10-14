@@ -1,0 +1,22 @@
+{
+  "name": "stream-eet",
+  "version": "1.0.0",
+  "description": "This is a streaming application built with React that allows you to create an account with Google Oauth. You can view all the streams on the application via a general feed. You can also create a new stream, edit it, and delete it. This app is broken into three parts:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatgirldorian/stream-eet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatgirldorian/stream-eet/issues"
+  },
+  "homepage": "https://github.com/thatgirldorian/stream-eet#readme",
+  "dependencies": {
+    "node-media-server": "^2.4.7"
+  }
+}
