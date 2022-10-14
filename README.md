@@ -21,6 +21,7 @@ The navigation is done using React Router, while the forms (validation + error h
 - The JSON Server package
 - RESTful APIs
 - Node Media Server (a Node JS implementation of RTMP)
+- OBS Project (open source software for video recording + live streaming)
 
 
 
