@@ -4,7 +4,7 @@ This is a streaming application built with React that allows you to create an ac
 
 - The UI that the user can see in their browser, which is made with React and Redux
 - A small web server that lists all the videos you can watch created with The JSON Server
-- A RTMP (Real-time messaging protocol) server that handles the video feed
+- A RTMP (Real-time messaging protocol) server that handles video streaming
 
 The navigation is done using React Router, while the forms (validation + error handling) are set up via Redux forms. I used the JSON Server package to spin up a web server for the back-end.
 
@@ -20,6 +20,7 @@ The navigation is done using React Router, while the forms (validation + error h
 - Google Oauth + Google API library
 - The JSON Server package
 - RESTful APIs
+- Node Media Server (a Node JS implementation of RTMP)
 
 
 
