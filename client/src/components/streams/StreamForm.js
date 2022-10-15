@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Field } from 'react-final-form'
-import './Stream.css'
+import '../../style/App.css'
 
 
 const StreamForm = (props) => {
@@ -28,7 +28,7 @@ const StreamForm = (props) => {
 
     //create a helper function for submission
     const onSubmit = (formValues) => {
-        this.props.onSubmit(formValues)
+        props.onSubmit(formValues)
     }
 
     return (
@@ -50,7 +50,7 @@ const StreamForm = (props) => {
 }}
 
     render={({ handleSubmit }) => (
-            <form onSubmit={handleSubmit} className="ui form error">
+            <form onSubmit={handleSubmit} className="ui form error" autocomplete="off">
                 <Field name="title" component={renderInput} label="Add a title" />
                 <Field
                     name="description"
