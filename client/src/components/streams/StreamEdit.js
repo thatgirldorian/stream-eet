@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchOneStream, editStream } from '../../actions'
 import StreamForm from './StreamForm';
-
+import '../../style/App.css'
 
 class StreamEdit extends React.Component {
     componentDidMount() {

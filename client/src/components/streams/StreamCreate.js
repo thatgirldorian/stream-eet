@@ -3,6 +3,7 @@ import './Stream.css'
 import { connect } from 'react-redux'
 import { createStream } from '../../actions'
 import StreamForm from './StreamForm';
+import '../../style/App.css'
 
 class StreamCreate extends React.Component {
 

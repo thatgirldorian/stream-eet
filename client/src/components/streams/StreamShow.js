@@ -2,6 +2,7 @@ import React from 'react';
 import flv from 'flv.js'
 import { connect } from 'react-redux'
 import { fetchOneStream } from '../../actions';
+import '../../style/App.css'
 
 class StreamShow extends React.Component {
 //define a constructor to set up a video reference
@@ -25,7 +26,7 @@ constructor(props) {
 
     //use this to clean up any resources created by the video player
     componentWillUnmount() {
-
+        this.player.destroy()
     }
 
     buildPlayer() {
@@ -52,8 +53,8 @@ constructor(props) {
             <div className="show-stream">
                 <h2>View a stream</h2>
                 <video ref={this.videoRef} style={{ width: '100%'}} controls />
-                <h1>{this.props.stream.title}</h1>
-                <h5>{this.props.stream.description}</h5>
+                <h3>{this.props.stream.title}</h3>
+                <p>{this.props.stream.description}</p>
             </div>
         )
     }
